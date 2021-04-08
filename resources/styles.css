@@ -67,6 +67,7 @@ header #site-title {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .link {
@@ -74,6 +75,7 @@ header #site-title {
     height: 250px;
     margin: 20px;
     background-color: #824c40;
+    flex-shrink: 0;
 }
 
 #bio-button {
@@ -94,5 +96,30 @@ header #site-title {
     html, body {
         width: 100%;
         margin: 0;
+    }
+
+    .link {
+        width: 200px;
+        height: 200px;
+        margin: 20px 10px;
+        background-color: #824c40;
+        flex-shrink: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #link-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .link {
+        width: 400px;
+        height: 400px;
+        margin: 20px;
+        background-color: #824c40;
+        flex-shrink: 0;
     }
 }
