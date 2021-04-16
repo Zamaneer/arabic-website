@@ -1,0 +1,151 @@
+/*بسم الله الرحمان الرحيم*/
+
+/* UNIVERSAL STYLES */
+html, body {
+    width: 100%;
+    background-color: #ebe4db;
+
+    font-size: 18px;
+    font-family: Roboto;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*SCROLLBAR*/
+/*Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ac5c45 #3e1e18;
+  }
+  
+/*Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+*::-webkit-scrollbar-track {
+    background: #3e1e18; 
+  }
+   
+*::-webkit-scrollbar-thumb {
+    background: #ac5c45; 
+  }
+
+header {
+  width: 100%;
+  background-color: #ebe4db;
+  box-shadow: 0px 2px 6px #a3a09b;
+
+  position: fixed;
+  top: 0;
+
+  z-index: 2;
+}
+
+
+nav {
+  width: 95%;
+  height: 30px;
+  margin: 20px auto;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+nav a {
+  margin: 0 10px;
+
+  font-size: 1.25rem;
+  color: #824c40;  
+}
+
+#nav-title {
+  margin: 0 20px;
+
+  order: 1;
+
+  font-weight: 700;
+  color: black;
+  font-family: "Mirza";
+}
+
+#nav-title:hover{
+  text-shadow: 2px 2px 5px maroon;
+}
+
+nav a:hover{
+  font-weight: bold;
+}
+
+article {
+  width: 1000px;
+  margin: -100px auto 0;
+  box-sizing: border-box;
+  padding: 20px;
+
+  position: relative;
+  top: 30px;
+}
+
+.bio-container {
+  width: 100%;
+  height: 500px;
+  margin: 150px 0;
+
+  display: flex;
+  align-items: flex-start;
+
+  background-color: #3e1e18;
+  color: white;
+}
+
+.bio-container section {
+  display: inline-block;
+  height: 92%;
+  margin: 3% 4% 5% 5%;
+  width: 45%;
+  text-align: center;
+}
+
+.bio-container h2 {
+  font-size: 4rem;
+  font-family: 'Mirza', serif;
+  font-weight: bold;
+  text-align: justify;
+  direction:rtl;
+}
+
+.bio-container p {
+  font-size: 1.25rem;
+  margin: 10px 0 20px;
+
+  text-align: justify;
+  direction:rtl;
+}
+
+.bio-container button {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  background-color: white;
+}
+
+.bio-container button:hover {
+  font-weight: bold;
+}
+
+.bio-container img {
+  display: inline-block;
+  height: 100%;
+  width: 40%;
+  margin-left: 4%;
+}
+
+#sahal-section p {
+  font-size: 1.1rem;
+}
