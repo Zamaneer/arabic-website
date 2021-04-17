@@ -46,7 +46,9 @@ a {
 
 header {
     display: flex;
-    height: 400px;
+    box-sizing: border-box;
+    height: 200px;
+    border: 15px solid black;
 
     align-items: center;
     justify-content: center;
@@ -58,7 +60,7 @@ header {
     background-position: center;
 
     color: black;
-    outline: 3px solid black;
+    outline: 5px solid black;
 }
 
 /*MAIN PAGE*/
@@ -93,7 +95,7 @@ header {
     align-items: center;
     justify-content: center;
 
-    outline: 3px solid black;
+    outline: 5px solid black;
 }
 
 #summary p {
@@ -114,7 +116,7 @@ header {
 
     text-align: center;
 
-    outline: 3px solid black;
+    outline: 5px solid black;
 }
 
 #link-container {
