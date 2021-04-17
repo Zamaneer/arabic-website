@@ -5,6 +5,9 @@ html, body {
     width: 100%;
     background-color: #ebe4db;
 
+    background-image: url(./margin-background);
+
+
     font-size: 18px;
     font-family: Roboto;
     color: black;
@@ -72,6 +75,8 @@ nav a {
   font-weight: 700;
   color: black;
   font-family: "Mirza";
+
+  transition: 250ms linear;
 }
 
 #nav-title:hover{
@@ -79,7 +84,7 @@ nav a {
 }
 
 nav a:hover{
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 article {
@@ -133,10 +138,14 @@ article {
   margin: 0 auto;
   font-size: 1.5rem;
   background-color: white;
+  border: black;
+
+  transition: 250ms linear;
 }
 
 .bio-container button:hover {
-  font-weight: bold;
+  background-color: #824c40;
+  color: white;
 }
 
 .bio-container img {
