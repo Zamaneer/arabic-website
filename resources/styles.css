@@ -5,11 +5,18 @@ html, body {
     width: 85%;
     margin-left: 7.5%;
     margin-right: 7.5%;
-    background-color: #3e1e18;
+    background-color: #ebe4db;
+
+    background-image: url(./margin-background);
 
     font-size: 18px;
     font-family:'Times New Roman', Times, serif;
     color: white;
+}
+
+body {
+    position: relative;
+    top: 60px;
 }
 
 a {
@@ -51,10 +58,11 @@ header {
     background-position: center;
 
     color: black;
+    outline: 3px solid black;
 }
 
 /*MAIN PAGE*/
-header #site-title {
+#site-title {
     width: auto;
     height: auto;
     padding: 10px 20px;
@@ -65,16 +73,27 @@ header #site-title {
     font-family: "Mirza";
     font-size: 4rem;
     text-shadow: 2px 2px maroon;
+
+    transition: 250ms linear;
+}
+
+#site-title:hover{
+    text-shadow: 4px 4px 4px maroon;
+
 }
 
 #summary {
     display: flex;
     padding: 40px 60px;
-    background-color: #824c40;
+    background-color: #3e1e18;
+
+    position: relative;
+    top: 40px;
 
     align-items: center;
     justify-content: center;
 
+    outline: 3px solid black;
 }
 
 #summary p {
@@ -87,10 +106,15 @@ header #site-title {
 }
 
 #table-of-contents {
-    background-color: #ebe4db;
-    padding-bottom: 10px;
+    background-color: #824c40;
+    padding: 20px 0;
+
+    position: relative;
+    top: 80px;
 
     text-align: center;
+
+    outline: 3px solid black;
 }
 
 #link-container {
@@ -105,7 +129,7 @@ header #site-title {
     width: 250px;
     height: 250px;
     margin: 20px;
-    background-color: #824c40;
+    background-color: #3e1e18;
 
     flex-shrink: 0;
 
@@ -148,6 +172,16 @@ button {
     font-family: 'Times New Roman', Times, serif;
 
     cursor: pointer;
+    transition: 250ms linear;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+footer {
+    height: 150px;
 }
 
 
