@@ -5,7 +5,8 @@ html, body {
     width: 100%;
     background-color: #ebe4db;
 
-    background-image: url(./margin-background);
+    background-image: url(../margin-background);
+    background-attachment: fixed;
 
 
     font-size: 18px;

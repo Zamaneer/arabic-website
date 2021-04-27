@@ -7,8 +7,9 @@ html, body {
     margin-right: 7.5%;
     background-color: #ebe4db;
 
-    background-image: url(./margin-background);
-
+    background-image: url(../margin-background);
+    background-attachment: fixed;
+    
     font-size: 18px;
     font-family:'Times New Roman', Times, serif;
     color: white;
@@ -54,7 +55,7 @@ header {
     justify-content: center;
 
     /* Background image properties */
-    background-image: url(./title-background-blur.jpg);
+    background-image: url(../title-background-blur.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
