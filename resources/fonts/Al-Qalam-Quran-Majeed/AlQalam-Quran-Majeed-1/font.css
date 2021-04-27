@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'AlQalam-Quran-Majeed-1';
+  src: url('AlQalam-Quran-Majeed-1.eot');
+  src: url('AlQalam-Quran-Majeed-1.eot?#iefix') format('embedded-opentype'),
+       url('AlQalam-Quran-Majeed-1.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AlQalamQuranMajeed1';
+  src: url('AlQalamQuranMajeed1.svg#AlQalamQuranMajeed1') format('svg'),
+       url('AlQalamQuranMajeed1.ttf') format('truetype'),
+       url('AlQalamQuranMajeed1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
