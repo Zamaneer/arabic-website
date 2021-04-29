@@ -17,6 +17,21 @@ html, body {
 
 a {
     text-decoration: none;
+    color: maroon;
+}
+
+article a:visited {
+  color: #ac5c45;
+}
+
+figure {
+  background-color: #c5bdb4;
+  color: #3e1e18;
+  font-size: 1.2rem;
+}
+
+figcaption {
+  padding: 10px 10px;
 }
 
 /*SCROLLBAR*/
@@ -136,13 +151,12 @@ button:hover{
 
 article {
   width: 800px;
-  margin: 0 auto;
+  margin: 40px auto 20px;
   box-sizing: border-box;
+  box-shadow: 2px 2px 5px gray;
   padding: 20px;
-  position: relative;
-  top: 20px;
   background-color: #ebe4db;
-  color: rgba(30, 30, 30, 0.794);
+  color: rgba(30, 30, 30, 0.897);
 }
 
 article header {
@@ -155,11 +169,19 @@ article h1 {
   font-family: "Amiri";
   font-size: 2.5rem;
   font-weight: bold;
-  margin-top: 40px;
+  margin: 20px 0px;
 }
 
 article h2 {
-  
+  font-family: "Lateef";
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  color: gray;
+}
+
+article img {
+  width: 100%;
 }
 
 article header #author-info {
@@ -167,7 +189,11 @@ article header #author-info {
   border-top: 1px solid #3e1e18;
   border-bottom: 1px solid #3e1e18;
   align-items: center;
-  margin: 20px 30px;
+  margin: 20px 0;
+  padding: 8px 0;
+
+  font-size: 1rem;
+  font-weight: bolder;
 }
 
 #author-info img {
@@ -175,23 +201,46 @@ article header #author-info {
   height: 60px;
   width: 60px;
   margin-left: 15px;
+  margin-right: 5px;
 }
 
 #author-info span {
-  font-size: 1rem;
-  font-weight: bolder;
   display: block;
+  margin-top: 6px;
 }
 
 #author-info #name {
-  margin-bottom: 5px;
+  padding-bottom: 10px;
+  color: maroon;
+}
+
+#basmalah {
+  display: block;
+  font-family: "Reem Kufi";
+  font-size: 1.8rem;
+  font-style: italic;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
 }
 
 article p {
-  font-size: 1.55rem;
+  font-size: 1.45rem;
   line-height: 40px;
   text-align: justify;
-  margin: 15px 0 15px;
+  margin: 20px 0 20px;
+}
+
+article h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+article h4 {
+  font-size: 1.45rem;
+  font-weight: bold;
+  margin-top: 40px;
 }
 
 article #quran {
@@ -200,3 +249,69 @@ article #quran {
   text-align: center;
   margin: 20px auto -20px;
 }
+
+#references {
+  display: inline-block;
+  width: 100%;
+  /*width:fit-content;*/
+  background-color: #ebe4db;
+  border-radius: 8px;
+  border: 2px solid #3e1e18;
+}
+
+#references h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: #3e1e18;
+  padding: 10px 15px 10px 0;
+  margin-top: 0;
+}
+
+#references h5 {
+  margin: 20px 15px 0 0;
+  font-size: 1.4rem;
+  color: maroon;
+}
+
+#references ul{
+  margin: 15px;
+}
+
+#references li {
+  font-size: 1.25rem;
+  margin: 5px 0;
+}
+
+#english-references li{
+  font-size: 1.1rem;
+}
+
+/*
+#interview {
+  display: inline-block;
+}
+
+#interview audio {
+  height: 50px;
+}
+
+#interview p {
+  font-size: 1rem;
+} */
+
+#extra {
+  color: white;
+  background-color: #3e1e18;
+}
+
+#extra h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: rgb(165, 163, 163);
+}
+
+#extra h4 {
+  color: #9c5b4c;
+}
+
