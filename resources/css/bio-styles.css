@@ -113,8 +113,8 @@ article {
 .bio-container section {
   display: inline-block;
   height: 92%;
-  margin: 3% 4% 5% 5%;
-  width: 45%;
+  margin: 3% 4% 5% 3%;
+  width: 49%;
   text-align: center;
 }
 
@@ -153,9 +153,14 @@ article {
   display: inline-block;
   height: 100%;
   width: 40%;
-  margin-left: 4%;
+  margin-left: 2%;
 }
 
-#sahal-section p {
+#sahal p {
   font-size: 1.1rem;
 }
+
+#muhtasim p {
+  font-size: 1.4rem;
+}
+
