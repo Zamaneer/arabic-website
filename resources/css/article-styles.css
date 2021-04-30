@@ -25,6 +25,8 @@ article a:visited {
 }
 
 figure {
+  width: 90%;
+  margin: 0 auto;
   background-color: #c5bdb4;
   color: #3e1e18;
   font-size: 1.2rem;
@@ -243,6 +245,24 @@ article h4 {
   margin-top: 40px;
 }
 
+article ol {
+  list-style: arabic-indic;
+  margin: 0 50px 40px 20px;
+  font-size: 1.4rem;
+}
+
+ol li {
+  margin: 20px 0 20px;
+}
+
+.list-image {
+  width: 70%;
+}
+
+.isolated {
+  margin: 10px 50px 20px 30px;
+}
+
 article #quran {
   font-family: 'AlQalam-Quran-Majeed-2', 'AlQalamQuranMajeed2';
   display: block;
@@ -254,6 +274,7 @@ article #quran {
   display: inline-block;
   width: 100%;
   /*width:fit-content;*/
+  margin-top: 40px;
   background-color: #ebe4db;
   border-radius: 8px;
   border: 2px solid #3e1e18;
