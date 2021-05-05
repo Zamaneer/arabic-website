@@ -10,13 +10,15 @@ html, body {
 
 
     font-size: 18px;
-    font-family: Roboto;
+    font-family: 'Times New Roman', Times, serif;
     color: black;
+    direction: rtl;
 }
 
 a {
     text-decoration: none;
 }
+
 
 /*SCROLLBAR*/
 /*Firefox */
@@ -38,6 +40,9 @@ a {
     background: #ac5c45; 
   }
 
+
+/*MAIN STYLES*/
+/*Nav bar*/
 header {
   width: 100%;
   background-color: #ebe4db;
@@ -45,7 +50,6 @@ header {
 
   position: fixed;
   top: 0;
-
   z-index: 2;
 }
 
@@ -56,7 +60,7 @@ nav {
   margin: 20px auto;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -71,7 +75,7 @@ nav a {
 #nav-title {
   margin: 0 20px;
 
-  order: 1;
+  order: -1;
 
   font-weight: 700;
   color: black;
@@ -88,14 +92,13 @@ nav a:hover{
   font-weight: bolder;
 }
 
+/*Main content*/
 article {
-  width: 1000px;
-  margin: -100px auto 0;
-  box-sizing: border-box;
-  padding: 20px;
+  width: 980px;
+  margin: 0 auto;
 
   position: relative;
-  top: 30px;
+  top: -10px;
 }
 
 .bio-container {
@@ -110,64 +113,62 @@ article {
   color: white;
 }
 
-.bio-container section {
-  display: inline-block;
-  height: 92%;
-  margin: 3% 4% 5% 3%;
-  width: 49%;
-  text-align: center;
-}
+  /*TEXT styling*/
+  .bio-container section {
+    margin: auto 5%;
+    width: 50%;
 
-.bio-container h2 {
-  font-size: 4rem;
-  font-family: 'Mirza', serif;
-  font-weight: bold;
-  text-align: justify;
-  direction:rtl;
-}
+    text-align: center;
+  }
 
-.bio-container p {
-  font-size: 1.25rem;
-  margin: 10px 0 20px;
+  .bio-container h2 {
+    margin-top: 10px;
 
-  text-align: justify;
-  direction:rtl;
-}
+    font-size: 4rem;
+    font-family: 'Mirza', serif;
+    font-weight: bold;
+    text-align: justify;
+  }
 
-.bio-container button {
-  width: fit-content;
-  margin: 0 auto;
-  font-size: 1.5rem;
-  background-color: white;
-  border: black;
+  .bio-container p {
+    margin: 10px 0 20px;
 
-  transition: 250ms linear;
-}
+    font-size: 1.2rem;
+    text-align: justify;
+  }
 
-.bio-container button:hover {
-  background-color: #824c40;
-  color: white;
-}
+  .bio-container button {
+    width: fit-content;
+    margin: 0 auto;
+    background-color: white;
+    border: black;
 
-.bio-container img {
-  display: inline-block;
-  height: 100%;
-  width: 40%;
-  margin-left: 2%;
-}
+    font-size: 1.5rem;
 
-#sahal p {
-  font-size: 1.1rem;
-}
+    transition: 250ms linear;
+  }
 
-#muhtasim p {
-  font-size: 1.4rem;
-}
+  .bio-container button:hover {
+    background-color: #824c40;
+    color: white;
+  }
 
-#emaad p {
-  font-size: 1.6rem;
-}
+  /*Styles for specific bio texts*/
+  #nabil p {
+    font-size: 1.3rem;
+  }
+  
+  #muhtasim p {
+    font-size: 1.4rem;
+  }
+  
+  #emaad p {
+    font-size: 1.6rem;
+  }
 
-#emaad button {
-  margin-top: 15px;
-}
+  /*IMAGE styling*/
+  .bio-container img {
+    height: 100%;
+    width: 40%;
+  }
+
