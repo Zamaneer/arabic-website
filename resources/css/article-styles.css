@@ -1,9 +1,10 @@
 /*بسم الله الرحمان الرحيم*/
 
-/* UNIVERSAL STYLES */
+/* ====================== UNIVERSAL STYLES =======================*/
 html, body {
     width: 100%;
     background-color: #ebe4db;
+    padding-bottom: 40px;
 
     background-image: url(../margin-background);
     background-attachment: fixed;
@@ -20,7 +21,7 @@ a {
     color: maroon;
 }
 
-article a:visited {
+article a:visited :not(#author-info) {
   color: #ac5c45;
 }
 
@@ -36,7 +37,8 @@ figcaption {
   padding: 10px 10px;
 }
 
-/*SCROLLBAR*/
+
+/*---------------- SCROLLBAR ------------------*/
 /*Firefox */
 * {
     scrollbar-width: thin;
@@ -57,34 +59,45 @@ figcaption {
   }
 
 
-  @font-face {
-    font-family: 'AlQalam-Quran-Majeed-2';
-    src: url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalam-Quran-Majeed-2.eot');
-    src: url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalam-Quran-Majeed-2.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalam-Quran-Majeed-2.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'AlQalamQuranMajeed2';
-    src: url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalamQuranMajeed2.svg#AlQalamQuranMajeed2') format('svg'),
-         url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalamQuranMajeed2.ttf') format('truetype'),
-         url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalamQuranMajeed2.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+/*------------------- FONTS ------------------------*/
+@font-face {
+  font-family: 'AlQalam-Quran-Majeed-2';
+  src: url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalam-Quran-Majeed-2.eot');
+  src: url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalam-Quran-Majeed-2.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalam-Quran-Majeed-2.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AlQalamQuranMajeed2';
+  src: url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalamQuranMajeed2.svg#AlQalamQuranMajeed2') format('svg'),
+        url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalamQuranMajeed2.ttf') format('truetype'),
+        url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalamQuranMajeed2.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
   
 
-header {
+
+/*=========================== PAGE STYLES ==============================*/
+
+/*--------------------- NAV STYLES -------------------*/
+#page-header {
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  
   background-color: #ebe4db;
   box-shadow: 0px 2px 6px #a3a09b;
-  padding: 20px 34px;
+  padding: 15px 34px;
 }
-
 
 nav {
   height: 30px;
@@ -94,16 +107,11 @@ nav {
   align-items: center;
 }
 
-
 nav a {
   margin: 0 10px;
 
   font-size: 1.25rem;
   color: #824c40;  
-}
-
-#current-page {
-  text-decoration: underline;
 }
 
 #nav-title {
@@ -118,21 +126,13 @@ nav a {
   transition: 250ms linear;
 }
 
-#nav-title:hover{
-  text-shadow: 2px 2px 5px maroon;
-}
-
-nav a:hover{
-  font-weight: bolder;
-}
-
 button {
   display: block;
   background-color: inherit;
   border: 2px solid black;
   border-radius: 5px;
   padding: 4px 10px;
-  margin-left: 40px;
+  margin-left: 80px;
 
   text-align: center;
   align-items: center;
@@ -146,21 +146,46 @@ button {
   transition: 250ms linear;
 }
 
+
+/*Nav interactivity*/
+#current-page {
+  text-decoration: underline;
+}
+
+#nav-title:hover{
+  text-shadow: 2px 2px 5px maroon;
+}
+
+nav a:hover{
+  font-weight: bolder;
+}
+
 button:hover{
   background-color: black;
   color: white;
 }
 
+
+
+/*----------------------- ARTICLE STYLES ---------------------*/
 article {
-  width: 800px;
-  margin: 40px auto 20px;
-  box-sizing: border-box;
+  position: relative;
+  top: 70px;
+  width: 600px;
+  margin: 40px auto;
+  padding: 20px 100px;
+
   box-shadow: 2px 2px 5px gray;
-  padding: 20px;
   background-color: #ebe4db;
   color: rgba(30, 30, 30, 0.897);
 }
 
+article img {
+  width: 100%;
+}
+
+
+/*Article header*/
 article header {
   display: block;
   box-shadow: none;
@@ -177,33 +202,31 @@ article h1 {
 article h2 {
   font-family: "Lateef";
   font-size: 2.2rem;
-  margin-bottom: 20px;
   margin-right: 5px;
   color: gray;
 }
 
-article img {
-  width: 100%;
-}
-
+/* - Author info box */
 article header #author-info {
   display: flex;
-  border-top: 1px solid #3e1e18;
-  border-bottom: 1px solid #3e1e18;
-  align-items: center;
   margin: 20px 0;
   padding: 8px 0;
+  border-top: 1px solid #3e1e18;
+  border-bottom: 1px solid #3e1e18;
+
+  align-items: center;
 
   font-size: 1rem;
   font-weight: bolder;
 }
 
 #author-info img {
-  border-radius: 100%;
   height: 60px;
   width: 60px;
   margin-left: 15px;
   margin-right: 5px;
+
+  border-radius: 100%;
 }
 
 #author-info span {
@@ -211,21 +234,8 @@ article header #author-info {
   margin-top: 6px;
 }
 
-#author-info #name {
-  padding-bottom: 10px;
-  color: maroon;
-}
 
-#basmalah {
-  display: block;
-  font-family: "Reem Kufi";
-  font-size: 1.8rem;
-  font-style: italic;
-  width: 100%;
-  text-align: center;
-  margin-top: 40px;
-}
-
+/*Article main content*/
 article p {
   font-size: 1.45rem;
   line-height: 40px;
@@ -255,12 +265,23 @@ ol li {
   margin: 20px 0 20px;
 }
 
+/*Specific styles*/
 .list-image {
   width: 70%;
 }
 
 .isolated {
   margin: 10px 50px 20px 30px;
+}
+
+#basmalah {
+  display: block;
+  font-family: "Reem Kufi";
+  font-size: 1.8rem;
+  font-style: italic;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
 }
 
 article #quran {
@@ -270,10 +291,11 @@ article #quran {
   margin: 20px auto -20px;
 }
 
+
+/*Article footer*/
 #references {
   display: inline-block;
   width: 100%;
-  /*width:fit-content;*/
   margin-top: 40px;
   background-color: #ebe4db;
   border-radius: 8px;
@@ -308,19 +330,86 @@ article #quran {
   font-size: 1.1rem;
 }
 
-/*
-#interview {
-  display: inline-block;
+
+/*------------------------- INTERVIEW STYLES --------------------------*/
+/*Universal*/
+#interviews {
+  background-color: #824c40;
+  outline: 5px solid black;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  color: white;
 }
 
-#interview audio {
-  height: 50px;
+/*Description*/
+#interviews h1 {
+  text-align: center;
+  margin: 0;
 }
 
-#interview p {
-  font-size: 1rem;
-} */
+#interviews p {
+  font-size: 1.5rem;
+  margin: 10px 0 10px;
+}
 
+#interviews ul {
+  list-style: initial;
+  margin: 0 30px 10px 0;
+  font-size: 1.25rem;
+}
+
+/*Video gallery*/
+.gallery {
+  direction: ltr; 
+}
+
+.gallery-cell {
+  width: 100%;
+  text-align: center;
+  height: 400px;
+}
+
+.gallery-cell h3 {
+  display: block;
+  color: white;
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.gallery-cell video {
+  width: 100%;
+}
+
+/* - Flickity styling*/
+
+.flickity-button {
+  background: transparent;
+}
+.flickity-button:hover {
+  background: #333;
+}
+
+.flickity-prev-next-button {
+  width: 60px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.flickity-button-icon {
+  fill: white;
+}
+
+.flickity-prev-next-button.previous {
+  left: -120px;
+}
+.flickity-prev-next-button.next {
+  right: -80px;
+}
+
+
+
+/*-------------------------- EXTRA ARTICLE STYLE -------------------------*/
 #extra {
   color: white;
   background-color: #3e1e18;
