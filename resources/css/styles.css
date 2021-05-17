@@ -129,7 +129,7 @@ header {
     flex-wrap: wrap;
 }
 
-.link {
+#link-container a {
     position: relative;
     width: 250px;
     height: 250px;
@@ -137,11 +137,9 @@ header {
     background-color: #3e1e18;
 
     flex-shrink: 0;
-
-    cursor: pointer;
 }
 
-.link img {
+#link-container img {
     display: block;
     width: 100%;
 }
@@ -163,7 +161,7 @@ header {
     text-align: center;
 }
 
-.link:hover .link-desc {
+a:hover .link-desc {
     opacity: 1;
 }
 
