@@ -1,24 +1,25 @@
 /*بسم الله الرحمان الرحيم*/
 
 /* ====================== UNIVERSAL STYLES =======================*/
-html, body {
-    width: 100%;
-    background-color: #ebe4db;
-    padding-bottom: 40px;
+html,
+body {
+  width: 100%;
+  background-color: #ebe4db;
+  padding-bottom: 40px;
 
-    background-image: url(../margin-background);
-    background-attachment: fixed;
+  background-image: url(../margin-background);
+  background-attachment: fixed;
 
 
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    direction: rtl;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  direction: rtl;
 }
 
 a {
-    text-decoration: none;
-    color: maroon;
+  text-decoration: none;
+  color: maroon;
 }
 
 article a:visited :not(#author-info) {
@@ -41,22 +42,22 @@ figcaption {
 /*---------------- SCROLLBAR ------------------*/
 /*Firefox */
 * {
-    scrollbar-width: thin;
-    scrollbar-color: #ac5c45 #3e1e18;
-  }
-  
+  scrollbar-width: thin;
+  scrollbar-color: #ac5c45 #3e1e18;
+}
+
 /*Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-    width: 10px;
-  }
-  
+  width: 10px;
+}
+
 *::-webkit-scrollbar-track {
-    background: #3e1e18; 
-  }
-   
+  background: #3e1e18;
+}
+
 *::-webkit-scrollbar-thumb {
-    background: #ac5c45; 
-  }
+  background: #ac5c45;
+}
 
 
 /*------------------- FONTS ------------------------*/
@@ -64,7 +65,7 @@ figcaption {
   font-family: 'AlQalam-Quran-Majeed-2';
   src: url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalam-Quran-Majeed-2.eot');
   src: url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalam-Quran-Majeed-2.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalam-Quran-Majeed-2.woff2') format('woff2');
+    url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalam-Quran-Majeed-2.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -72,12 +73,12 @@ figcaption {
 @font-face {
   font-family: 'AlQalamQuranMajeed2';
   src: url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalamQuranMajeed2.svg#AlQalamQuranMajeed2') format('svg'),
-        url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalamQuranMajeed2.ttf') format('truetype'),
-        url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalamQuranMajeed2.woff') format('woff');
+    url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalamQuranMajeed2.ttf') format('truetype'),
+    url('../fonts/Al-Qalam-Quran-Majeed/AlQalam-Quran-Majeed-2/AlQalamQuranMajeed2.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-  
+
 
 
 /*=========================== PAGE STYLES ==============================*/
@@ -93,7 +94,7 @@ figcaption {
   position: fixed;
   top: 0;
   z-index: 2;
-  
+
   background-color: #ebe4db;
   box-shadow: 0px 2px 6px #a3a09b;
   padding: 15px 34px;
@@ -111,7 +112,7 @@ nav a {
   margin: 0 10px;
 
   font-size: 1.25rem;
-  color: #824c40;  
+  color: #824c40;
 }
 
 #nav-title {
@@ -152,15 +153,15 @@ button {
   text-decoration: underline;
 }
 
-#nav-title:hover{
+#nav-title:hover {
   text-shadow: 2px 2px 5px maroon;
 }
 
-nav a:hover{
+nav a:hover {
   font-weight: bolder;
 }
 
-button:hover{
+button:hover {
   background-color: black;
   color: white;
 }
@@ -317,7 +318,7 @@ article #quran {
   color: maroon;
 }
 
-#references ul{
+#references ul {
   margin: 15px;
 }
 
@@ -326,7 +327,7 @@ article #quran {
   margin: 5px 0;
 }
 
-#english-references li{
+#english-references li {
   font-size: 1.1rem;
 }
 
@@ -360,7 +361,7 @@ article #quran {
 
 /*Video gallery*/
 .gallery {
-  direction: ltr; 
+  direction: ltr;
 }
 
 .gallery-cell {
@@ -386,6 +387,7 @@ article #quran {
 .flickity-button {
   background: transparent;
 }
+
 .flickity-button:hover {
   background: #333;
 }
@@ -403,6 +405,7 @@ article #quran {
 .flickity-prev-next-button.previous {
   left: -160px;
 }
+
 .flickity-prev-next-button.next {
   right: -80px;
 }
@@ -424,4 +427,3 @@ article #quran {
 #extra h4 {
   color: #9c5b4c;
 }
-
