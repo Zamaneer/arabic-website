@@ -1,7 +1,8 @@
 /*بسم الله الرحمان الرحيم*/
 
-/* UNIVERSAL STYLES */
-html, body {
+/* ====================== UNIVERSAL STYLES =======================*/
+html,
+body {
     width: 85%;
     margin-left: 7.5%;
     margin-right: 7.5%;
@@ -9,9 +10,9 @@ html, body {
 
     background-image: url(../margin-background);
     background-attachment: fixed;
-    
+
     font-size: 18px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     color: white;
 }
 
@@ -24,27 +25,31 @@ a {
     text-decoration: none;
 }
 
-/*SCROLLBAR*/
+/*---------------- SCROLLBAR ------------------*/
 /*Firefox */
 * {
     scrollbar-width: thin;
     scrollbar-color: #ac5c45 #3e1e18;
-  }
-  
+}
+
 /*Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 10px;
-  }
-  
+}
+
 *::-webkit-scrollbar-track {
-    background: #3e1e18; 
-  }
-   
+    background: #3e1e18;
+}
+
 *::-webkit-scrollbar-thumb {
-    background: #ac5c45; 
-  }
+    background: #ac5c45;
+}
 
 
+
+/*=========================== PAGE STYLES ==============================*/
+
+/*--------------------- HEADER STYLES -------------------*/
 header {
     display: flex;
     box-sizing: border-box;
@@ -64,7 +69,6 @@ header {
     outline: 5px solid black;
 }
 
-/*MAIN PAGE*/
 #site-title {
     width: auto;
     height: auto;
@@ -80,11 +84,14 @@ header {
     transition: 250ms linear;
 }
 
-#site-title:hover{
+#site-title:hover {
     text-shadow: 4px 4px 4px maroon;
 
 }
 
+
+
+/*----------------------- SUMMARY STYLES ---------------------*/
 #summary {
     display: flex;
     padding: 40px 60px;
@@ -101,13 +108,16 @@ header {
 
 #summary p {
     text-align: justify;
-    direction:rtl;
+    direction: rtl;
 
     color: white;
     font-size: 1.5rem;
     font-weight: bolder;
 }
 
+
+
+/*----------------------- TABLE OF CONTENTS STYLES ---------------------*/
 #table-of-contents {
     background-color: #824c40;
     padding: 20px 0;
@@ -149,11 +159,12 @@ header {
     right: 0;
     bottom: 0;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.65); /* Black see-through */
+    background: rgba(0, 0, 0, 0.65);
+    /* Black see-through */
     color: #f1f1f1;
     width: 210px;
     transition: .5s ease;
-    opacity:0;
+    opacity: 0;
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
@@ -184,16 +195,18 @@ button {
     transition: 250ms linear;
 }
 
-button:hover{
+button:hover {
     background-color: white;
     color: black;
 }
 
 
 
-/*RESPONSIVE STYLES*/
+/* ====================== RESPONSIVE STYLES =======================*/
 @media screen and (max-width: 768px) {
-    html, body {
+
+    html,
+    body {
         width: 100%;
         margin: 0;
     }

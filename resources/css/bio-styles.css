@@ -1,48 +1,51 @@
 /*بسم الله الرحمان الرحيم*/
 
-/* UNIVERSAL STYLES */
-html, body {
-    width: 100%;
-    background-color: #ebe4db;
+/* ====================== UNIVERSAL STYLES =======================*/
+html,
+body {
+  width: 100%;
+  background-color: #ebe4db;
 
-    background-image: url(../margin-background);
-    background-attachment: fixed;
+  background-image: url(../margin-background);
+  background-attachment: fixed;
 
 
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    direction: rtl;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  direction: rtl;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 
-/*SCROLLBAR*/
+/*---------------- SCROLLBAR ------------------*/
 /*Firefox */
 * {
-    scrollbar-width: thin;
-    scrollbar-color: #ac5c45 #3e1e18;
-  }
-  
+  scrollbar-width: thin;
+  scrollbar-color: #ac5c45 #3e1e18;
+}
+
 /*Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-    width: 10px;
-  }
-  
+  width: 10px;
+}
+
 *::-webkit-scrollbar-track {
-    background: #3e1e18; 
-  }
-   
+  background: #3e1e18;
+}
+
 *::-webkit-scrollbar-thumb {
-    background: #ac5c45; 
-  }
+  background: #ac5c45;
+}
 
 
-/*MAIN STYLES*/
-/*Nav bar*/
+
+/*=========================== PAGE STYLES ==============================*/
+
+/*--------------------- NAV STYLES -------------------*/
 header {
   width: 100%;
   background-color: #ebe4db;
@@ -52,7 +55,6 @@ header {
   top: 0;
   z-index: 2;
 }
-
 
 nav {
   width: 95%;
@@ -64,14 +66,14 @@ nav {
   align-items: center;
 }
 
-
 nav a {
   margin: 0 10px;
 
   font-size: 1.25rem;
-  color: #824c40;  
+  color: #824c40;
 }
 
+/*Nav interactivity*/
 #nav-title {
   margin: 0 20px;
 
@@ -84,15 +86,17 @@ nav a {
   transition: 250ms linear;
 }
 
-#nav-title:hover{
+#nav-title:hover {
   text-shadow: 2px 2px 5px maroon;
 }
 
-nav a:hover{
+nav a:hover {
   font-weight: bolder;
 }
 
-/*Main content*/
+
+
+/*----------------------- ARTICLE STYLES ---------------------*/
 article {
   width: 980px;
   margin: 0 auto;
@@ -100,7 +104,6 @@ article {
   position: relative;
   top: -10px;
 }
-
 
 .bio-container {
   width: 100%;
@@ -115,62 +118,66 @@ article {
   color: white;
 }
 
-  /*TEXT styling*/
-  .bio-container section {
-    margin: auto 5%;
-    width: 50%;
 
-    text-align: center;
-  }
+/*Text styles*/
+.bio-container section {
+  margin: auto 5%;
+  width: 50%;
 
-  .bio-container h2 {
-    margin-top: 10px;
+  text-align: center;
+}
 
-    font-size: 4rem;
-    font-family: 'Mirza', serif;
-    font-weight: bold;
-    text-align: justify;
-  }
+.bio-container h2 {
+  margin-top: 10px;
 
-  .bio-container p {
-    margin: 10px 0 20px;
+  font-size: 4rem;
+  font-family: 'Mirza', serif;
+  font-weight: bold;
+  text-align: justify;
+}
 
-    font-size: 1.2rem;
-    text-align: justify;
-  }
+.bio-container p {
+  margin: 10px 0 20px;
 
-  .bio-container button {
-    width: fit-content;
-    margin: 0 auto;
-    background-color: white;
-    border: black;
+  font-size: 1.2rem;
+  text-align: justify;
+}
 
-    font-size: 1.5rem;
 
-    transition: 250ms linear;
-  }
+/*Article button*/
+.bio-container button {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: white;
+  border: black;
 
-  .bio-container button:hover {
-    background-color: #824c40;
-    color: white;
-  }
+  font-size: 1.5rem;
 
-  /*Styles for specific bio texts*/
-  #nabil p {
-    font-size: 1.3rem;
-  }
-  
-  #muhtasim p {
-    font-size: 1.4rem;
-  }
-  
-  #emaad p {
-    font-size: 1.6rem;
-  }
+  transition: 250ms linear;
+}
 
-  /*IMAGE styling*/
-  .bio-container img {
-    height: 100%;
-    width: 40%;
-  }
+.bio-container button:hover {
+  background-color: #824c40;
+  color: white;
+}
 
+
+/*Styles for specific bio texts*/
+#nabil p {
+  font-size: 1.3rem;
+}
+
+#muhtasim p {
+  font-size: 1.4rem;
+}
+
+#emaad p {
+  font-size: 1.6rem;
+}
+
+
+/*Image styles*/
+.bio-container img {
+  height: 100%;
+  width: 40%;
+}
