@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../resources/flickity/flickity.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../resources/css/article-styles.css">
 
-    <title> كيفية | عن خطّ الجميلة في اللغة العربيّة</title>
+    <title> كيفية | عن الخطّ الجميل في اللغة العربيّة</title>
 </head>
 
 <body>
@@ -24,10 +24,17 @@
     <!--NAV-->
     <header id="page-header">
         <nav>
-            <a id="nav-title" href="../index.html">عن خطّ الجميلة في اللغة العربيّة</a>
+            <a id="nav-title" href="../index.html">عن الخطّ الجميل في اللغة العربيّة</a>
             <a href="nabil-article.html">أهمية</a>
             <a href="sahal+muhtasim-article.html">التراث</a>
-            <a id="current-page" href="emaad-article.html">كيفية</a>
+            <div class="dropdown">
+                <a class="dropbtn" id="current-page">كيفية</a>
+                <div class="dropdown-content">
+                  <a href="#main-article">كيفية تعلم فن الخط العربي</a>
+                  <a href="#extra-article">نصائح للمبتدئ</a>
+                  <a href="#interviews-section">المقابلات</a>
+                </div>
+            </div>
         </nav>
 
         <button onclick="document.location='bios.html'">عن الكتّاب</button>
@@ -35,6 +42,7 @@
 
 
     <!--MAIN CONTENT-->
+    <div id="main-article">
     <article>
 
         <!--Article header and author info-->
@@ -170,10 +178,12 @@
             </footer>
         </section>
     </article>
+    </div>
 
 
 
     <!--EXTRA ARTICLE-->
+    <div id="extra-article">
     <article id="extra">
         <h2>الزائدة!</h2>
         <h4>نصائح للمبتدئ</h4>
@@ -182,26 +192,28 @@
 
             <ol>
                 <li>الأولى هي أن تبدأ بسم الله الرحمن الرحيم وتتوكل على الله.</li>
-                <li>لثانية هي أن عليك أن تتعلم بشكل عميق وبالدقة فإن هذا الفن واسع.</li>
+                <li>الثانية هي أن عليك أن تتعلم بشكل عميق وبالدقة فإن هذا الفن واسع.</li>
                 <li>الثالثة هي أن تتعلم أنواع الخط كلها.</li>
                 <li>الرابعة هي جمع أدوات الخط وهي القلم والورقة و الحبر.</li>
                 <li>الخامسة هي التدريب والصبر كثيرا ومع التمرين يأتي إلى الإتقان.</li>
-                <li>السادسة هي الحصول على مدرس الخط وله إجازة إن أمكن وإلا فدريب بطريقة سهلة بالنسبة لك لك.</li>
+                <li>السادسة هي الحصول على مدرس الخط وله إجازة إن أمكن وإلا فدريب بطريقة سهلة بالنسبة لك.</li>
                 <li>السابعة هي تخصيص الوقت للتدريب. لا تستطيع أن تفعل إن لم يكن لديك وقت تخصصه للتدريب فطريق اتقان الخط
                     طويل ومع ذلك أيضا الاستمرار.</li>
             </ol>
         </p>
 
     </article>
+    </div>
 
 
 
     <!--INTERVIEWS SECTION-->
+    <div id="interviews-section">
     <article id="interviews">
 
         <!--Interview Description-->
         <h1>مقابلات</h1>
-        <p> نسأل زملائنا من كلية زيتونى بعض أسئلة عن كيفية تعلم فن الخط مثل: </p>
+        <p> نسأل زملائنا من كلية الزيتونة بعض أسئلة عن كيفية تعلم فن الخط مثل: </p>
         <ul>
             <li>ما قصتك وخبرتك مع فن الخط العربي؟ كيف بدأت الخط وكيف تطور خطك؟</li>
             <li>كيف يتعلم شخص فن الخط وهل لديك أي نصائح لمبتدئ؟</li>
@@ -266,6 +278,7 @@
             </div>
         </div>
     </article>
+    </div>
 
 
     <!--JAVASCRIPT-->
