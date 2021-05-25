@@ -87,42 +87,66 @@ figcaption {
 /*--------------------- NAV STYLES -------------------*/
 #page-header {
   width: 100%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #ebe4db;
+  box-shadow: 0px 2px 6px #a3a09b;
 
   position: fixed;
   top: 0;
   z-index: 2;
-
-  background-color: #ebe4db;
-  box-shadow: 0px 2px 6px #a3a09b;
-  padding: 15px 34px;
 }
 
 nav {
-  height: 30px;
-
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  height: 65px;
+
 }
 
 nav a {
   margin: 0 10px;
+  padding: 20px 0;
 
   font-size: 1.25rem;
   color: #824c40;
 }
 
+/*Nav interactivity*/
+#nav-title {
+  margin: 0 20px;
+
+  order: -1;
+
+  font-weight: 700;
+  color: black;
+  font-family: "Mirza";
+  text-decoration: none;
+
+  transition: 250ms linear;
+}
+
+#current-page {
+  font-weight: bold;
+}
+
+#nav-title:hover {
+  text-shadow: 2px 2px 5px maroon;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #ebe4db;
+  margin-top: 22px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  box-shadow: 0px 2px 6px #a3a09b;
 }
 
 /* Links inside the dropdown */
@@ -142,58 +166,6 @@ nav a {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-#nav-title {
-  margin: 0 20px;
-
-  order: -1;
-
-  font-weight: 700;
-  color: black;
-  font-family: "Mirza";
-  text-decoration: none;
-
-  transition: 250ms linear;
-}
-
-button {
-  display: block;
-  background-color: inherit;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 4px 10px;
-  margin-left: 80px;
-
-  text-align: center;
-  align-items: center;
-
-  color: black;
-  font-weight: 500;
-  font-size: 1.25rem;
-  font-family: 'Times New Roman', Times, serif;
-
-  cursor: pointer;
-  transition: 250ms linear;
-}
-
-
-/*Nav interactivity*/
-#current-page {
-  font-weight: bold;
-}
-
-#nav-title:hover {
-  text-shadow: 2px 2px 5px maroon;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-button:hover {
-  background-color: black;
-  color: white;
 }
 
 
@@ -456,4 +428,23 @@ article #quran {
 
 #extra h4 {
   color: #9c5b4c;
+}
+
+#back-to-top {
+  border: none;
+  height: 60px;
+  width: 60px;
+  padding-bottom: 10px;
+  position: relative;
+  position: fixed;
+  z-index: 2;
+  bottom: 30px;
+  right: 40px;
+  font-size: 1.5rem;
+  background-color: #3e1e18;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
 }
